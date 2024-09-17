@@ -33,8 +33,6 @@ import ast
 import time
 import io
 
-from notify import send
-
 # 每日 9-20/7：从早上 9 点到晚上 8 点（20 时）之间，每 7 个小时执行一次， 开始旅行
 # 9:15、16:15 执行，每日旅行两次应该足够用完耐力值了，可自行修改
 '''
@@ -345,4 +343,3 @@ if __name__ == "__main__":
     logging.info("所有用户旅行完成")
 
     log_contents = log_stream.getvalue()
-    send("i茅台旅行-日志：", log_contents)

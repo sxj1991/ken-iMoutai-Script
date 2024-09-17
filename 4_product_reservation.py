@@ -37,7 +37,6 @@ import io
 
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
-from notify import send
 
 # 每日 9:10 开始预约
 '''
@@ -386,4 +385,3 @@ if __name__ == "__main__":
     logging.info("所有用户预约完成")
 
     log_contents = log_stream.getvalue()
-    send("i茅台预约日志：", log_contents)
